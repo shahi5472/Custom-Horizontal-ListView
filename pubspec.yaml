@@ -1,7 +1,6 @@
 name: custom_horizontal_list_view
 description: This a custom package for horizontal list view
 version: 1.0.0
-author: S.m. Shahi
 homepage: https://github.com/shahi5472/Custom-Horizontal-ListView.git
 
 environment:
