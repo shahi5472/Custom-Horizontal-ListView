@@ -6,7 +6,7 @@ I have a solution that I'd like to share. By using this code, the horizontal
 list should now have dynamically sized items, making it more flexible to accommodate various 
 content heights.
 
-##Import it
+## Import it
 Now in your Dart code, you can use:
 ```dart
 import 'package:custom_horizontal_list_view/custom_horizontal_list_view.dart';
