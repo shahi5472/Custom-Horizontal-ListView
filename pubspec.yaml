@@ -1,0 +1,20 @@
+name: custom_horizontal_list_view
+description: This a custom package for horizontal list view
+version: 1.0.0
+author: S.m. Shahi
+homepage: https://github.com/shahi5472/Custom-Horizontal-ListView.git
+
+environment:
+  sdk: '>=3.0.6 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.2
+
+flutter:
