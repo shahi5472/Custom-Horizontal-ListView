@@ -15,15 +15,16 @@ import 'package:custom_horizontal_list_view/custom_horizontal_list_view.dart';
 This will add a line like this to your package's pubspec.yaml (and run an implicit dart pub get):
 
 ```dart
-dependencies:
-  custom_horizontal_list_view: ^1.0.0
+dependencies:custom_horizontal_list_view: ^
+1.0
+.1
 ```
 
 ## Example Code
 
 ```dart
 CustomHorizontalView(
-  spaceView: SizedBox(width: 10),
+spacing: 10.0,
   padding: EdgeInsetsDirectional.symmetric(horizontal: 20),
   items: List.generate(
     10,
@@ -40,7 +41,7 @@ import 'package:custom_horizontal_list_view/custom_horizontal_list_view.dart';
 
 CustomHorizontalListView(
     items: [],
-    spaceView: SizedBox(width: 10),
+spacing: 10.0,
     padding: EdgeInsets.zero,
     crossAxisAlignment: CrossAxisAlignment.start,
     reverse: false,
