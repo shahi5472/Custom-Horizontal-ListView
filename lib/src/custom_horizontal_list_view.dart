@@ -40,6 +40,7 @@ class CustomHorizontalListView extends StatelessWidget {
           controller: controller,
           child: Row(
             spacing: spacing,
+            mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: mainAxisAlignment,
             crossAxisAlignment: rowCrossAxisAlignment,
             children: List.generate(items.length, (index) => items[index]),
