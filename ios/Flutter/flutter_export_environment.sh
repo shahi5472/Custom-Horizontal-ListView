@@ -1,7 +1,7 @@
 #!/bin/sh
 # This is a generated file; do not edit or check into version control.
 export "FLUTTER_ROOT=/Users/shahi/Public/flutter"
-export "FLUTTER_APPLICATION_PATH=/Users/shahi/Desktop/Flutter Projects/custom_horizontal_list_view"
+export "FLUTTER_APPLICATION_PATH=/Users/shahi/Desktop/Extra Projects/Custom-Horizontal-ListView"
 export "COCOAPODS_PARALLEL_CODE_SIGN=true"
 export "FLUTTER_TARGET=lib/main.dart"
 export "FLUTTER_BUILD_DIR=build"
