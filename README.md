@@ -15,9 +15,7 @@ import 'package:custom_horizontal_list_view/custom_horizontal_list_view.dart';
 This will add a line like this to your package's pubspec.yaml (and run an implicit dart pub get):
 
 ```dart
-dependencies:custom_horizontal_list_view: ^
-1.0
-.1
+dependencies:custom_horizontal_list_view: ^1.0.1
 ```
 
 ## Example Code
