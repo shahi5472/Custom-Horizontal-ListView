@@ -2,25 +2,29 @@ import 'package:flutter/material.dart';
 
 class CustomHorizontalListView extends StatelessWidget {
   const CustomHorizontalListView({
-    Key? key,
+    super.key,
     required this.items,
-    this.spaceView,
     this.padding,
-    this.crossAxisAlignment = CrossAxisAlignment.start,
     this.reverse = false,
     this.physics,
     this.controller,
-  }) : super(key: key);
+    this.spacing = 0.0,
+    this.crossAxisAlignment = CrossAxisAlignment.start,
+    this.mainAxisAlignment = MainAxisAlignment.start,
+    this.rowCrossAxisAlignment = CrossAxisAlignment.center,
+  });
 
   final List<Widget> items;
-  final Widget? spaceView;
   final EdgeInsetsGeometry? padding;
 
   final CrossAxisAlignment crossAxisAlignment;
+  final MainAxisAlignment mainAxisAlignment;
+  final CrossAxisAlignment rowCrossAxisAlignment;
 
   final bool reverse;
   final ScrollPhysics? physics;
   final ScrollController? controller;
+  final double spacing;
 
   @override
   Widget build(BuildContext context) {
@@ -35,18 +39,10 @@ class CustomHorizontalListView extends StatelessWidget {
           physics: physics,
           controller: controller,
           child: Row(
-            children: List.generate(
-              items.length,
-              (index) {
-                return Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    items[index],
-                    if (spaceView != null && index != items.length - 1) spaceView!,
-                  ],
-                );
-              },
-            ),
+            spacing: spacing,
+            mainAxisAlignment: mainAxisAlignment,
+            crossAxisAlignment: rowCrossAxisAlignment,
+            children: List.generate(items.length, (index) => items[index]),
           ),
         ),
       ],
